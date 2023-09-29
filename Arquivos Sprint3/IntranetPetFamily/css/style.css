@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+body {
+  width: 80%;
+  background: #571991;
+  margin: auto;
+}
+.conteiner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+  /* border: 1px solid red; */
+}
+
+.menu {
+  width: 80%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+.menu h2.pet-family {
+  font-size: 2.5em;
+  color: #ff841f;
+}
+
+.menu .logo {
+  letter-spacing: 4px;
+}
+
+.pet-site {
+  width: 80%;
+  height: 30%;
+  display: flex;
+  gap: 5%;
+  /* border: 1px solid red; */
+}
+
+.pet-site .link-home {
+  width: 30%;
+  /* border: 1px solid green; */
+}
+
+.pet-site .txt-site {
+  width: 65%;
+  /* border: 1px solid yellow; */
+}
+
+.pet-site .link-home a img.home-site {
+  width: 100%;
+  height: 100%;
+}
+
+.pet-executavel {
+  width: 80%;
+  height: 30%;
+  display: flex;
+  gap: 5%;
+  /* border: 1px solid red; */
+}
+
+.pet-executavel .link-download {
+  width: 30%;
+  /* border: 1px solid green; */
+}
+
+.pet-executavel .txt-download {
+  width: 65%;
+  height: 100%;
+  /* border: 1px solid yellow; */
+}
+
+.pet-executavel .link-download a img.download {
+  width: 100%;
+  height: 100%;
+}
+/* Formataçoes rapida */
+.span-family {
+  color: white !important;
+  font-size: 1.2em;
+}
+
+.titulo {
+  color: white;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+}
+
+.texto {
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 500px) {
+  .pet-executavel {
+    width: 80%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+    /* border: 1px solid red; */
+  }
+
+  .pet-site {
+    width: 80%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+    /* border: 1px solid red; */
+  }
+  .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 2px;
+    margin-bottom: 3px;
+  }
+
+  .texto {
+    font-size: 0.8em;
+    color: white;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media (max-width: 850px) {
+  .titulo {
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+  }
+
+  .conteiner p.texto {
+    font-size: 12px;
+    color: white;
+    letter-spacing: 0.5px;
+  }
+}

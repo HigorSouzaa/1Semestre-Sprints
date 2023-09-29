@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr"><!-- LTR: ferramenta para que o texto seja escrito da esquerda para a direita -->
+<head>
+  <meta charset="UTF-8">
+  <title>PetFamily - O lar do seu Pet!</title>
+  <link rel="stylesheet" href="styleprodutos.css">
+  <!-- Boxiocns CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Link para importar os ícones do AwesomeIcons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx bxs-home-heart'></i>
+      <span class="logo_name">Menu</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="indexcaes.html">
+          <i class="fa-solid fa-dog"></i>
+          <span class="link_name">Cães</span>
+        </a>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="indexgatos.html">
+            <i class="fa-solid fa-cat"></i>
+            <span class="link_name">Gatos</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="indexpassaros.html">
+            <i class="fa-solid fa-crow"></i>
+            <span class="link_name">Pássaros</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <a href="indexracoes.html">
+          <i class="fa-solid fa-bowl-food"></i>
+          <span class="link_name">Rações</span>
+        </a>
+      </li>
+      <li>
+        <a href="indexprodutos.html">
+          <i class="fa-solid fa-box-open"></i>
+          <span class="link_name">Produtos</span>
+        </a>
+      </li>
+      <li>
+        <a href="indexveterinario.html">
+          <i class="fa-solid fa-house-medical"></i>
+          <span class="link_name">Veterinário</span>
+        </a>
+      </li>
+      <li>
+        <a href="indexconfig.html">
+          <i class="fa-solid fa-gear"></i>
+          <span class="link_name">Configurações</span>
+        </a>
+      </li>
+      <li>
+        <div class="profile-details">
+          <div class="profile-content">
+            <img src="profile.png" alt="profileImg">
+          </div>
+          <div class="name-job">
+            <div class="profile_name"><a href="indexlogin.html">Acessar Perfil</a></div>
+            <div class="job"></div>
+          </div>
+          <i class='bx bx-log-in'></i>
+         
+        </div>
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
+    <nav class="home-bar">
+      <div class="home-content">  
+        <i class='bx bx-menu' style="color: rgb(255, 255, 255);"></i>
+        <!-- Campo de Pesquisa -->
+       
+        <input type="text" placeholder="   Pesquisar produtos" class="search-input">
+        <nav class="cart">
+          <i class='bx bx-cart'></i>
+          <div class="cart-count">0</div>
+        </nav>
+      </div>
+    </nav>
+    <div class="imghome">
+      <img src="Design_sem_nome__10_-removebg-preview.png" alt="">
+    </div>
+    <div class="container">
+      <h1><span>Produtos</span><br><span></span></h1>
+      <p>Dê uma olhada nos nossos melhores produtos!</p>
+    </div>
+    <div class="button-container">
+      <a href="indexcatalogo.html">
+      <button>Catálogo</button>
+    </a>
+    </div>
+   
+   
+    
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+    // Adiciona um evento de clique ao ícone do carrinho
+const cartIcon = document.getElementById("cart-icon");
+cartIcon.addEventListener("click", function() {
+  // Coloque aqui o código a ser executado quando o ícone do carrinho for clicado
+  console.log("Ícone do carrinho foi clicado!");
+});
+  });
+ 
+</script>
+</body>
+</html>
