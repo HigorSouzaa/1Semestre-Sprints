@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap'); /*Comando de importação de fonte do Google Fonts*/
+
+* { /*Seletor universal que seleciona todos os elementos da página*/
+    margin: 0;/*Define que não haverá margens para nenhum elemento*/
+    padding: 0; /*Define que não haverá nenhum preenchimento interno para nenhum elemento*/
+    box-sizing: border-box; /*Define que a largura e altura de um elemento incluem o conteúdo o preenchimento interno, mas excluem as bordas*/
+    font-family: 'Poppins', sans-serif; /*Define a família de fonte padrão como Poppins, ou qualquer outra fonte sem serifa caso a Poppins não esteja disponível*/
+}
+
+section { /*Tag HTML que define uma seção de um documento HTML*/
+    position: relative; /*Define a posição do elemento como relativa em relação à sua posição original*/
+    width: 100%; /*Define a largura do elemento como 100% da largura do elemento pai*/
+    min-height: 100vh; /*Define a altura mínima do elemento como 100% da altura da viewport.*/
+    padding: 100px; /*define o preenchimento interno do elemento com 100 pixels em todas as direções.*/
+    display: flex; /*define o elemento como um container flexível.*/
+    justify-content: space-between; /*define o alinhamento dos elementos flexíveis ao longo do eixo principal (horizontal) como distribuídos uniformemente com espaçamento entre eles.*/
+    align-items: center; /*define o alinhamento dos elementos flexíveis ao longo do eixo transversal (vertical) como centralizados.*/
+    background-image: radial-gradient(circle at 70.4% 74.32%, #423d3e 0, #373737 50%, #2c312f 100%);
+}
+.circle { /*é um seletor de classe que seleciona o elemento com a classe "circle".*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #304377;
+    clip-path: circle(50% at bottom right); /*define uma máscara de recorte para o elemento com um círculo de 50% do tamanho do elemento, posicionado na parte inferior direita.*/
+
+}
+
+header { /*é uma tag HTML que define o cabeçalho de uma seção.*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px; /*define o preenchimento interno do elemento com 40 pixels na parte superior e inferior e 100 pixels nas laterais.*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .logo { /*seleciona o elemento com a classe "logo" dentro do cabeçalho.*/
+    position: relative;
+    max-width: 150px; /*define a largura máxima do elemento como 150 pixels.*/
+
+}
+
+header .navegation ul { /*seleciona a lista não ordenada dentro da navegação dentro do cabeçalho.*/
+    position: relative;
+    display: flex;
+
+}
+ 
+header .navegation li { /*seleciona os itens da lista dentro da navegação.*/
+    list-style: none;/*seleciona os links dentro dos itens da lista na navegação.*/
+
+}
+
+header .navegation li a { /*remove a marcação padrão da lista.*/
+    display: inline-block; /**/
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 19px;
+    margin-left: 100px;
+    border-radius: 40;
+
+}
+
+.content {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.content .text {
+    position: relative;
+    max-width: 900px;
+    margin-right: 20px;
+
+}
+
+.content .text h2 {
+    color: #ffffff;
+    font-size: 5em;
+
+}
+
+.content .text h2 span {
+    font-size: 80px;
+    color: #2b07f7;
+
+}
+
+.content .text p {
+    color: #fff;
+
+}
+
+.content .text a {
+    display: inline-block;
+    margin-top: 100px;
+    padding: 10px 25px;
+    background: #304377;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+
+}
+
+.content .text a:hover {
+    transform: translateY(-10px);
+
+}
+
+.icons {
+    position: absolute;
+    bottom: 10px;
+    left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons li {
+    list-style: none;
+
+}
+
+.icons li a {
+    display: inline-block;
+    margin-left: 40px;
+    background: #222;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    position: relative;
+
+}
+
+.icons li a:hover {
+    background: #85131a;
+    transform: translateY(-10px);
+
+}
+
+.icons li a img {
+    transform: scale(0.5);
+    background-size: 10px;
+
+}
+
+.boxImg {
+    position: fixed;
+    right: -30px;
+    bottom: -40px;
+
+
+}
+
+.boxImg img {
+    width: auto;
+    height: auto;
+}
+
+
+
+
+.img-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 700px;
+}
+
+.content {
+    overflow: hidden;
+    
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    width: 279px;
+    height: 40px;
+    margin-left: -1370px;
+    margin-top: -30px;
+}
+
+button[type="submit"] {
+    background: #304377;
+    color: #ffffff;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 20px 7px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin-left: 6px;
+    margin-top: -30px;
+    
+}
+
+button[type="submit"]:hover {
+    background: #1d2847;
+}
